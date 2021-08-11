@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -22,6 +23,7 @@ module.exports = {
     'import',
     'import-helpers',
     'react-hooks',
+    'prettier',
   ],
   rules: {
     'class-methods-use-this': 'off',
@@ -73,5 +75,6 @@ module.exports = {
     'react/no-children-prop': 'off',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
+    'prettier/prettier': 'error',
   },
 };
