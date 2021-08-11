@@ -39,6 +39,7 @@ module.exports = {
         groups: [
           '/^react/',
           '/^expo/',
+          '/^@expo/',
           'module',
           ['parent', 'sibling', 'index'],
         ],
