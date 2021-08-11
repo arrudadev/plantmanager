@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "lint-staged"
+    "lint": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "expo": "~42.0.1",
