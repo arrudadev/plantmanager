@@ -9,10 +9,18 @@ import {
 
 import { Feather } from '@expo/vector-icons';
 
+import { CommonActions, useNavigation } from '@react-navigation/native';
+
 import wateringImg from '../../assets/watering.png';
 import { styles } from './styles';
 
 export function Welcome() {
+  const navigation = useNavigation();
+
+  function handleStart() {
+    navigation.dispatch(CommonActions.navigate({ name: 'UserIdentification' }));
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.wrapper}>
@@ -29,7 +37,11 @@ export function Welcome() {
           sempre que precisar.
         </Text>
 
-        <TouchableOpacity style={styles.button} activeOpacity={0.7}>
+        <TouchableOpacity
+          style={styles.button}
+          activeOpacity={0.7}
+          onPress={handleStart}
+        >
           <Feather name="chevron-right" style={styles.buttonIcon} />
         </TouchableOpacity>
       </View>
