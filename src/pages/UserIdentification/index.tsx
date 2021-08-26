@@ -55,7 +55,7 @@ export function UserIdentification() {
                 'Agora vamos começar a cuidar das suas plantinhas com muito cuidado.',
               buttonTitle: 'Começar',
               icon: 'smile',
-              nextScreen: 'PlantSelect',
+              nextScreen: 'NewPlant',
             },
           }),
         );
