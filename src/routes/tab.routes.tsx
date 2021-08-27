@@ -5,6 +5,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import { MyPlants } from '../pages/MyPlants';
 import { NewPlant } from '../pages/NewPlant';
 import colors from '../styles/colors';
 
@@ -31,6 +32,20 @@ export const TabRoutes = () => {
           tabBarIcon: ({ size, color }: any) => (
             <MaterialIcons
               name="add-circle-outline"
+              size={size}
+              color={color}
+            />
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name="Minhas Plantas"
+        component={MyPlants}
+        options={{
+          tabBarIcon: ({ size, color }: any) => (
+            <MaterialIcons
+              name="format-list-bulleted"
               size={size}
               color={color}
             />
