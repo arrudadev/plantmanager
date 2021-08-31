@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 
-import { useNavigation } from '@react-navigation/core';
+import { CommonActions, useNavigation } from '@react-navigation/native';
 
 import { EnvironmentButton } from '../../components/EnvironmentButton';
 import { Header } from '../../components/Header';
@@ -71,7 +71,9 @@ export function NewPlant() {
   }
 
   function handlePlantSelect(plant: PlantProps) {
-    // navigation.navigate('PlantSave', { plant });
+    navigation.dispatch(
+      CommonActions.navigate({ name: 'PlantSave', params: { plant } }),
+    );
   }
 
   useEffect(() => {

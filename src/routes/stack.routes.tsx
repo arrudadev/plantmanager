@@ -3,6 +3,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { Confirmation } from '../pages/Confirmation';
+import { PlantSave } from '../pages/PlantSave';
 import { UserIdentification } from '../pages/UserIdentification';
 import { Welcome } from '../pages/Welcome';
 import { TabRoutes } from './tab.routes';
@@ -21,5 +22,9 @@ export const StackRoutes: React.FC = () => (
     <Stack.Screen name="Confirmation" component={Confirmation} />
 
     <Stack.Screen name="NewPlant" component={TabRoutes} />
+
+    <Stack.Screen name="MyPlants" component={TabRoutes} />
+
+    <Stack.Screen name="PlantSave" component={PlantSave} />
   </Stack.Navigator>
 );
