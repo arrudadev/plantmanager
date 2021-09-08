@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="plantmanager" title="plantmanager" src="https://raw.githubusercontent.com/monteiro-alexandre/plantmanager/main/.github/assets/logo.png" width="220px" />
+    <img alt="plantmanager" title="plantmanager" src="https://raw.githubusercontent.com/monteiro-alexandre/plantmanager/main/.github/assets/logotype.png" width="220px" />
 </h1>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
