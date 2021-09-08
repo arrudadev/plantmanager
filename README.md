@@ -27,6 +27,7 @@ This project was developed with the following technologies:
 - [Typescript](https://www.typescriptlang.org/)
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
+- [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/)
 
 # :construction_worker: Installation
 
